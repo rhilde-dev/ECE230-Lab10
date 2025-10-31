@@ -6,8 +6,9 @@ module d_latch(
 );
 
     always @(D, enable) begin //maybe or it
-        if (enable)
+        if (enable) begin
             Q <= 1;
+        end
     end
 
     assign NotQ = ~Q; 

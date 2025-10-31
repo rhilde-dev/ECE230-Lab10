@@ -7,10 +7,9 @@ module byte_memory(
 );
     
     always @(memory, store) begin
-        if (store)
-               
+        if (store) begin
             memory <= data;
-            
+        end      
     end 
     
     assign n_mem = ~memory;

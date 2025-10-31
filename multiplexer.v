@@ -6,6 +6,8 @@ module multiplexer(
     output [7:0] Y
     );
     
+    assign Enable = 1'b1;
+    
     assign Y = (Sel == 2'b00) && Enable ? A : // If 0
                (Sel == 2'b01) && Enable ? B : // If 1
                (Sel == 2'b10) && Enable ? C : 
