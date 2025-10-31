@@ -4,7 +4,7 @@ module top(
     output [15:0] led
 );
     d_latch_1_bit part1(
-        .Data(sw[0]),
+        .D(sw[0]),
         .Q(led[0]),
         .NotQ(led[1]),
         .enable(btnC)

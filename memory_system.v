@@ -4,11 +4,6 @@ module memory_system(
     input [1:0] addr,
     output [7:0] memory
 );
-
-    // This should instantiate 4 instances of
-    // byte_memory, and then demultiplex
-    // data and store into the one selected by
-    // addr
     
     wire [7:0] arr_vec[3:0]; //stores 4 8-bit signals of data
     
@@ -38,5 +33,10 @@ module memory_system(
 
     // and one multiplexer:
     // 1. Multiplex selected byte -> memory
+    
+    // This should instantiate 4 instances of
+    // byte_memory, and then demultiplex
+    // data and store into the one selected by
+    // addr
 
 endmodule
