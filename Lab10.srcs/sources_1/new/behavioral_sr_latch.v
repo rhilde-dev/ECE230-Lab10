@@ -1,3 +1,5 @@
+//behavioral SR latch using procedural logic
+
 module d_latch(
     input [7:0] D, //data
     input enable,
@@ -13,4 +15,3 @@ module d_latch(
     assign NotQ = ~Q; 
 
 endmodule
-

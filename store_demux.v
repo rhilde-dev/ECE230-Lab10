@@ -1,3 +1,4 @@
+// 1-to-4 demultiplexer for store
 module store_demux(
     input data,
     input [1:0] sel,
@@ -7,7 +8,7 @@ module store_demux(
     output reg D
 );
 
-    always @(*) begin 
+      always @(*) begin 
         case(sel)
             2'b00: {D, C, B, A} <= {1'b0, 1'b0, 1'b0, data}; 
             2'b01: {D, C, B, A} <= {1'b0, 1'b0, data, 1'b0};
@@ -15,6 +16,5 @@ module store_demux(
             2'b11: {D, C, B, A} <= {data, 1'b0, 1'b0, 1'b0};
         endcase
     end
-
 endmodule
 

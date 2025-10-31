@@ -15,6 +15,4 @@ module demultiplexer(
             2'b11: {D, C, B, A} <= {data, 8'b0, 8'b0, 8'b0};
         endcase
     end
-
 endmodule
-

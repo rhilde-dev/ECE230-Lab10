@@ -40,4 +40,3 @@ module memory_system(
     // 1. Multiplex selected byte -> memory
 
 endmodule
-
